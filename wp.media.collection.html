@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: Cropper</title>
+	<title>Documentation Class: collection</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -95,15 +95,15 @@ A state for cropping an image.CustomizeImageCropper</a></li><li><a href="wp.medi
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: Cropper</h1>
+	<h1 class="page-title">Class: collection</h1>
 <section>
 
 <header>
     
         <h2>
-            <span class="ancestors"><a href="wp.html">wp</a><a href="wp.html#.media">.media</a><a href="wp.media.controller.html">.controller</a>.</span>
+            <span class="ancestors"><a href="wp.html">wp</a><a href="wp.html#.media">.media</a>.</span>
         
-        Cropper
+        collection
         </h2>
         
     
@@ -116,25 +116,63 @@ A state for cropping an image.CustomizeImageCropper</a></li><li><a href="wp.medi
         
 <hr>
 <dt>
-    <h4 class="name" id="Cropper"><span class="type-signature"></span>new Cropper()</h4>
+    <h4 class="name" id="collection"><span class="type-signature"></span>new collection(attributes)</h4>
     
     
 </dt>
 <dd>
 
     
-    <div class="description">
-        wp.media.controller.Cropper
-
-A state for cropping an image.
-    </div>
-    
 
     
 
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>attributes</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -172,8 +210,8 @@ A state for cropping an image.
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="media_controllers_cropper.js.html">media/controllers/cropper.js</a>,
-				 <a href="media_controllers_cropper.js.html#sunlight-1-line-15">line 15</a>
+				<a href="media-editor.js.html">media-editor.js</a>,
+				 <a href="media-editor.js.html#sunlight-1-line-330">line 330</a>
 			</li>
 		</ul>
 	</dd>
@@ -204,19 +242,6 @@ A state for cropping an image.
 
     
     </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="wp.media.controller.State.html">wp.media.controller.State</a></li>
-    
-        <li>Backbone.Model</li>
-    </ul>
-
 
     
 
@@ -237,7 +262,7 @@ A state for cropping an image.
             
 <hr>
 <dt>
-    <h4 class="name" id="activate"><span class="type-signature">&lt;abstract> </span>activate()</h4>
+    <h4 class="name" id="attachments"><span class="type-signature"></span>attachments(shortcode)</h4>
     
     
 </dt>
@@ -245,7 +270,7 @@ A state for cropping an image.
 
     
     <div class="description">
-        Activate event callback.
+        Retrieve attachments based on the properties of the passed shortcode
     </div>
     
 
@@ -255,6 +280,56 @@ A state for cropping an image.
 
     
     
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>shortcode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">wp.shortcode</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An instance of wp.shortcode().</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
 
     
 <dl class="details">
@@ -263,30 +338,9 @@ A state for cropping an image.
 	
 
 	
-	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
-	<dd class="tag-since">
-		<ul class="dummy">
-			<li>3.5.0</li>
-		</ul>
-	</dd>
-	
 
 	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="wp.media.controller.State.html#activate">wp.media.controller.State#activate</a>
-			</li>
-		</ul>
-	</dd>
-	
 
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="wp.media.controller.State.html#activate">wp.media.controller.State#activate</a>
-    </li></ul></dd>
     
 
     
@@ -312,8 +366,8 @@ A state for cropping an image.
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="media_controllers_state.js.html">media/controllers/state.js</a>,
-				 <a href="media_controllers_state.js.html#sunlight-1-line-55">line 55</a>
+				<a href="media-editor.js.html">media-editor.js</a>,
+				 <a href="media-editor.js.html#sunlight-1-line-349">line 349</a>
 			</li>
 		</ul>
 	</dd>
@@ -338,6 +392,33 @@ A state for cropping an image.
     
 
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    A Backbone.Collection containing
+     the media items belonging to a collection.
+     The query[ this.tag ] property is a Backbone.Model
+         containing the 'props' for the collection.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="wp.media.model.Attachments.html">wp.media.model.Attachments</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>
@@ -346,7 +427,7 @@ A state for cropping an image.
             
 <hr>
 <dt>
-    <h4 class="name" id="constructor"><span class="type-signature"></span>constructor()</h4>
+    <h4 class="name" id="edit"><span class="type-signature"></span>edit(content)</h4>
     
     
 </dt>
@@ -354,7 +435,8 @@ A state for cropping an image.
 
     
     <div class="description">
-        Constructor.
+        Triggered when double-clicking a collection shortcode placeholder
+  in the editor
     </div>
     
 
@@ -363,6 +445,60 @@ A state for cropping an image.
     
 
     
+        <h5>This:</h5>
+        <ul><li>wp.media.{prop}</li></ul>
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>content</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Content that is searched for possible
+   shortcode markup matching the passed tag name,</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -372,23 +508,7 @@ A state for cropping an image.
 	
 
 	
-	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
-	<dd class="tag-since">
-		<ul class="dummy">
-			<li>3.5.0</li>
-		</ul>
-	</dd>
-	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="wp.media.controller.State.html#constructor">wp.media.controller.State#constructor</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -416,8 +536,8 @@ A state for cropping an image.
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="media_controllers_state.js.html">media/controllers/state.js</a>,
-				 <a href="media_controllers_state.js.html#sunlight-1-line-26">line 26</a>
+				<a href="media-editor.js.html">media-editor.js</a>,
+				 <a href="media-editor.js.html#sunlight-1-line-484">line 484</a>
 			</li>
 		</ul>
 	</dd>
@@ -442,6 +562,30 @@ A state for cropping an image.
     
 
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    A media workflow.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="wp.media.view.MediaFrame.Select.html">wp.media.view.MediaFrame.Select</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>
@@ -450,7 +594,7 @@ A state for cropping an image.
             
 <hr>
 <dt>
-    <h4 class="name" id="deactivate"><span class="type-signature">&lt;abstract> </span>deactivate()</h4>
+    <h4 class="name" id="shortcode"><span class="type-signature"></span>shortcode(attachments)</h4>
     
     
 </dt>
@@ -458,7 +602,7 @@ A state for cropping an image.
 
     
     <div class="description">
-        Deactivate event callback.
+        Triggered when clicking 'Insert {label}' or 'Update {label}'
     </div>
     
 
@@ -468,218 +612,58 @@ A state for cropping an image.
 
     
     
+        <h5>Parameters:</h5>
+        
 
-    
-<dl class="details">
-    
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-	
-
-	
-	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
-	<dd class="tag-since">
-		<ul class="dummy">
-			<li>3.5.0</li>
-		</ul>
-	</dd>
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="wp.media.controller.State.html#deactivate">wp.media.controller.State#deactivate</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-    <dt class="tag-overrides">Overrides:</dt>
-    <dd class="tag-overrides"><ul class="dummy"><li>
-        <a href="wp.media.controller.State.html#deactivate">wp.media.controller.State#deactivate</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="media_controllers_state.js.html">media/controllers/state.js</a>,
-				 <a href="media_controllers_state.js.html#sunlight-1-line-63">line 63</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
+        <th>Type</th>
 
         
-            
-<hr>
-<dt>
-    <h4 class="name" id="ready"><span class="type-signature">&lt;abstract> </span>ready()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Ready event callback.
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
-	<dd class="tag-since">
-		<ul class="dummy">
-			<li>3.5.0</li>
-		</ul>
-	</dd>
-	
-
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="wp.media.controller.State.html#ready">wp.media.controller.State#ready</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="media_controllers_state.js.html">media/controllers/state.js</a>,
-				 <a href="media_controllers_state.js.html#sunlight-1-line-47">line 47</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
 
         
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<hr>
-<dt>
-    <h4 class="name" id="reset"><span class="type-signature">&lt;abstract> </span>reset()</h4>
-    
-    
-</dt>
-<dd>
+                <td class="name"><code>attachments</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="wp.media.model.Attachments.html">wp.media.model.Attachments</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A Backbone.Collection containing
+     the media items belonging to a collection.
+     The query[ this.tag ] property is a Backbone.Model
+         containing the 'props' for the collection.</td>
+        </tr>
 
     
-    <div class="description">
-        Reset event callback.
-    </div>
-    
+    </tbody>
+</table>
 
-    
-
-    
-
-    
     
 
     
@@ -689,23 +673,7 @@ A state for cropping an image.
 	
 
 	
-	<dt class="tag-since method-doc-label method-doc-details-label">Since:</dt>
-	<dd class="tag-since">
-		<ul class="dummy">
-			<li>3.5.0</li>
-		</ul>
-	</dd>
-	
 
-	
-	<dt class="inherited-from method-doc-label method-doc-details-label">Inherited From:</dt>
-	<dd class="inherited-from">
-		<ul class="dummy">
-			<li>
-				<a href="wp.media.controller.State.html#reset">wp.media.controller.State#reset</a>
-			</li>
-		</ul>
-	</dd>
 	
 
     
@@ -733,8 +701,8 @@ A state for cropping an image.
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="media_controllers_state.js.html">media/controllers/state.js</a>,
-				 <a href="media_controllers_state.js.html#sunlight-1-line-71">line 71</a>
+				<a href="media-editor.js.html">media-editor.js</a>,
+				 <a href="media-editor.js.html#sunlight-1-line-415">line 415</a>
 			</li>
 		</ul>
 	</dd>
@@ -759,6 +727,26 @@ A state for cropping an image.
     
 
     
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">wp.shortcode</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>
