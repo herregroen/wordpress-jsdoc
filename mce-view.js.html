@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Source: mce-view.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.united.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.html">wp</a></li><li><a href="wp.a11y.html">wp.a11y</a></li><li><a href="wp.api.html">wp.api</a></li><li><a href="wp.api.collections.html">wp.api.collections</a></li><li><a href="wp.api.models.html">wp.api.models</a></li><li><a href="wp.api.utils.html">wp.api.utils</a></li><li><a href="wp.api.views.html">wp.api.views</a></li><li><a href="wp.Backbone.html">wp.Backbone</a></li><li><a href="wp.customize.html">wp.customize</a></li><li><a href="wp.customize.HeaderTool.html">wp.customize.HeaderTool</a></li><li><a href="wp.customize.navMenusPreview.html">wp.customize.navMenusPreview</a></li><li><a href="wp.customize.selectiveRefresh.html">wp.customize.selectiveRefresh</a></li><li><a href="wp.customize.utils.html">wp.customize.utils</a></li><li><a href="wp.customize.widgetsPreview.html">wp.customize.widgetsPreview</a></li><li><a href="wp.html#.media">wp.media</a></li><li><a href="wp.media.audio.html">wp.media.audio</a></li><li><a href="wp.media.controller.html">wp.media.controller</a></li><li><a href="wp.media.editor.html">wp.media.editor</a></li><li><a href="wp.media.editor.send.html">wp.media.editor.send</a></li><li><a href="wp.media.frames.html">wp.media.frames</a></li><li><a href="wp.media.model.html">wp.media.model</a></li><li><a href="wp.media.model.Attachments.filters.html">wp.media.model.Attachments.filters</a></li><li><a href="wp.media.string.html">wp.media.string</a></li><li><a href="wp.media.video.html">wp.media.video</a></li><li><a href="wp.media.view.html">wp.media.view</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="$.widget.wp.pointer.html">$.widget.wp.pointer</a></li><li><a href="wp.BaseHandler.html">wp.BaseHandler</a></li><li><a href="wp.CustomHeader.html">wp.CustomHeader</a></li><li><a href="wp.customize.ChoiceListView.html">wp.customize.ChoiceListView</a></li><li><a href="wp.customize.ChoiceView.html">wp.customize.ChoiceView</a></li><li><a href="wp.customize.CombinedList.html">wp.customize.CombinedList</a></li><li><a href="wp.customize.CurrentView.html">wp.customize.CurrentView</a></li><li><a href="wp.customize.Element.html">wp.customize.Element</a></li><li><a href="wp.customize.HeaderTool.ChoiceList.html">wp.customize.HeaderTool.ChoiceList</a></li><li><a href="wp.customize.HeaderTool.DefaultsList.html">wp.customize.HeaderTool.DefaultsList</a></li><li><a href="wp.customize.HeaderTool.ImageModel.html">wp.customize.HeaderTool.ImageModel</a></li><li><a href="wp.customize.Loader.html">wp.customize.Loader</a></li><li><a href="wp.customize.Messenger.html">wp.customize.Messenger</a></li><li><a href="wp.customize.navMenusPreview.NavMenuInstancePartial.html">wp.customize.navMenusPreview.NavMenuInstancePartial</a></li><li><a href="wp.customize.Notification.html">wp.customize.Notification</a></li><li><a href="wp.customize.Preview.html">wp.customize.Preview</a></li><li><a href="wp.customize.selectiveRefresh.Partial.html">wp.customize.selectiveRefresh.Partial</a></li><li><a href="wp.customize.selectiveRefresh.Placement.html">wp.customize.selectiveRefresh.Placement</a></li><li><a href="wp.customize.Value.html">wp.customize.Value</a></li><li><a href="wp.customize.Values.html">wp.customize.Values</a></li><li><a href="wp.customize.widgetsPreview.SidebarPartial.html">wp.customize.widgetsPreview.SidebarPartial</a></li><li><a href="wp.customize.widgetsPreview.WidgetPartial.html">wp.customize.widgetsPreview.WidgetPartial</a></li><li><a href="wp.media.collectio.html">wp.media.collectio</a></li><li><a href="wp.media.controller.AudioDetails.html">wp.media.controller.AudioDetails</a></li><li><a href="wp.media.controller.CollectionAdd.html">wp.media.controller.CollectionAdd</a></li><li><a href="wp.media.controller.CollectionEdit.html">wp.media.controller.CollectionEdit</a></li><li><a href="wp.media.controller.Cropper.html">wp.media.controller.Cropper</a></li><li><a href="wp.media.controller.EditAttachmentMetadata.html">wp.media.controller.EditAttachmentMetadata</a></li><li><a href="wp.media.controller.EditImage.html">wp.media.controller.EditImage</a></li><li><a href="wp.media.controller.Embed.html">wp.media.controller.Embed</a></li><li><a href="wp.media.controller.FeaturedImage.html">wp.media.controller.FeaturedImage</a></li><li><a href="wp.media.controller.GalleryAdd.html">wp.media.controller.GalleryAdd</a></li><li><a href="wp.media.controller.GalleryEdit.html">wp.media.controller.GalleryEdit</a></li><li><a href="wp.media.controller.ImageDetails.html">wp.media.controller.ImageDetails</a></li><li><a href="wp.media.controller.Library.html">wp.media.controller.Library</a></li><li><a href="wp.media.controller.Region.html">wp.media.controller.Region</a></li><li><a href="wp.media.controller.ReplaceImage.html">wp.media.controller.ReplaceImage</a></li><li><a href="wp.media.controller.SiteIconCropper.html">wp.media.controller.SiteIconCropper</a></li><li><a href="wp.media.controller.State.html">wp.media.controller.State</a></li><li><a href="wp.media.controller%250A%250AA%2520state%2520for%2520cropping%2520an%2520image.CustomizeImageCropper.html">wp.media.controller
+
+A state for cropping an image.CustomizeImageCropper</a></li><li><a href="wp.media.model.Attachment.html">wp.media.model.Attachment</a></li><li><a href="wp.media.model.Attachments.html">wp.media.model.Attachments</a></li><li><a href="wp.media.model.PostImage.html">wp.media.model.PostImage</a></li><li><a href="wp.media.model.PostMedia.html">wp.media.model.PostMedia</a></li><li><a href="wp.media.model.Query.html">wp.media.model.Query</a></li><li><a href="wp.media.model.Selection.html">wp.media.model.Selection</a></li><li><a href="wp.media.View_.html">wp.media.View</a></li><li><a href="wp.media.view.Attachment.html">wp.media.view.Attachment</a></li><li><a href="wp.media.view.Attachment.Details.html">wp.media.view.Attachment.Details</a></li><li><a href="wp.media.view.Attachment.Details.TwoColumn.html">wp.media.view.Attachment.Details.TwoColumn</a></li><li><a href="wp.media.view.Attachment.EditLibrary.html">wp.media.view.Attachment.EditLibrary</a></li><li><a href="wp.media.view.Attachment.EditSelection.html">wp.media.view.Attachment.EditSelection</a></li><li><a href="wp.media.view.Attachment.Library.html">wp.media.view.Attachment.Library</a></li><li><a href="wp.media.view.Attachment.Selection.html">wp.media.view.Attachment.Selection</a></li><li><a href="wp.media.view.AttachmentCompat.html">wp.media.view.AttachmentCompat</a></li><li><a href="wp.media.view.AttachmentFilters.html">wp.media.view.AttachmentFilters</a></li><li><a href="wp.media.view.AttachmentFilters.All.html">wp.media.view.AttachmentFilters.All</a></li><li><a href="wp.media.view.AttachmentFilters.DateFilter.html">wp.media.view.AttachmentFilters.DateFilter</a></li><li><a href="wp.media.view.AttachmentFilters.Uploaded.html">wp.media.view.AttachmentFilters.Uploaded</a></li><li><a href="wp.media.view.Attachments.html">wp.media.view.Attachments</a></li><li><a href="wp.media.view.Attachments.Selection.html">wp.media.view.Attachments.Selection</a></li><li><a href="wp.media.view.AttachmentsBrowser.html">wp.media.view.AttachmentsBrowser</a></li><li><a href="wp.media.view.AudioDetails.html">wp.media.view.AudioDetails</a></li><li><a href="wp.media.view.Button.html">wp.media.view.Button</a></li><li><a href="wp.media.view.ButtonGroup.html">wp.media.view.ButtonGroup</a></li><li><a href="wp.media.view.Cropper.html">wp.media.view.Cropper</a></li><li><a href="wp.media.view.DeleteSelected.html">wp.media.view.DeleteSelected</a></li><li><a href="wp.media.view.DeleteSelectedPermanently.html">wp.media.view.DeleteSelectedPermanently</a></li><li><a href="wp.media.view.EditImage.html">wp.media.view.EditImage</a></li><li><a href="wp.media.view.EditImage.Details.html">wp.media.view.EditImage.Details</a></li><li><a href="wp.media.view.EditorUploader.html">wp.media.view.EditorUploader</a></li><li><a href="wp.media.view.Embed.html">wp.media.view.Embed</a></li><li><a href="wp.media.view.EmbedImage.html">wp.media.view.EmbedImage</a></li><li><a href="wp.media.view.EmbedLink.html">wp.media.view.EmbedLink</a></li><li><a href="wp.media.view.EmbedUrl.html">wp.media.view.EmbedUrl</a></li><li><a href="wp.media.view.FocusManager.html">wp.media.view.FocusManager</a></li><li><a href="wp.media.view.Frame.html">wp.media.view.Frame</a></li><li><a href="wp.media.view.Iframe.html">wp.media.view.Iframe</a></li><li><a href="wp.media.view.ImageDetails.html">wp.media.view.ImageDetails</a></li><li><a href="wp.media.view.Label.html">wp.media.view.Label</a></li><li><a href="wp.media.view.MediaDetails.html">wp.media.view.MediaDetails</a></li><li><a href="wp.media.view.MediaFrame.html">wp.media.view.MediaFrame</a></li><li><a href="wp.media.view.MediaFrame.AudioDetails.html">wp.media.view.MediaFrame.AudioDetails</a></li><li><a href="wp.media.view.MediaFrame.EditAttachments.html">wp.media.view.MediaFrame.EditAttachments</a></li><li><a href="wp.media.view.MediaFrame.ImageDetails.html">wp.media.view.MediaFrame.ImageDetails</a></li><li><a href="wp.media.view.MediaFrame.Manage.html">wp.media.view.MediaFrame.Manage</a></li><li><a href="wp.media.view.MediaFrame.Manage.Router.html">wp.media.view.MediaFrame.Manage.Router</a></li><li><a href="wp.media.view.MediaFrame.MediaDetails.html">wp.media.view.MediaFrame.MediaDetails</a></li><li><a href="wp.media.view.MediaFrame.Post.html">wp.media.view.MediaFrame.Post</a></li><li><a href="wp.media.view.MediaFrame.Select.html">wp.media.view.MediaFrame.Select</a></li><li><a href="wp.media.view.MediaFrame.VideoDetails.html">wp.media.view.MediaFrame.VideoDetails</a></li><li><a href="wp.media.view.Menu.html">wp.media.view.Menu</a></li><li><a href="wp.media.view.MenuItem.html">wp.media.view.MenuItem</a></li><li><a href="wp.media.view.Modal.html">wp.media.view.Modal</a></li><li><a href="wp.media.view.PriorityList.html">wp.media.view.PriorityList</a></li><li><a href="wp.media.view.Router.html">wp.media.view.Router</a></li><li><a href="wp.media.view.RouterItem.html">wp.media.view.RouterItem</a></li><li><a href="wp.media.view.Search.html">wp.media.view.Search</a></li><li><a href="wp.media.view.Selection.html">wp.media.view.Selection</a></li><li><a href="wp.media.view.SelectModeToggle.html">wp.media.view.SelectModeToggle</a></li><li><a href="wp.media.view.Settings.html">wp.media.view.Settings</a></li><li><a href="wp.media.view.Settings.AttachmentDisplay.html">wp.media.view.Settings.AttachmentDisplay</a></li><li><a href="wp.media.view.Settings.Gallery.html">wp.media.view.Settings.Gallery</a></li><li><a href="wp.media.view.Settings.Playlist.html">wp.media.view.Settings.Playlist</a></li><li><a href="wp.media.view.Sidebar.html">wp.media.view.Sidebar</a></li><li><a href="wp.media.view.SiteIconCropper.html">wp.media.view.SiteIconCropper</a></li><li><a href="wp.media.view.SiteIconPreview.html">wp.media.view.SiteIconPreview</a></li><li><a href="wp.media.view.Spinner.html">wp.media.view.Spinner</a></li><li><a href="wp.media.view.Toolbar.html">wp.media.view.Toolbar</a></li><li><a href="wp.media.view.Toolbar.Embed.html">wp.media.view.Toolbar.Embed</a></li><li><a href="wp.media.view.Toolbar.Select.html">wp.media.view.Toolbar.Select</a></li><li><a href="wp.media.view.UploaderInline.html">wp.media.view.UploaderInline</a></li><li><a href="wp.media.view.UploaderStatus.html">wp.media.view.UploaderStatus</a></li><li><a href="wp.media.view.UploaderStatusError.html">wp.media.view.UploaderStatusError</a></li><li><a href="wp.media.view.UploaderWindow.html">wp.media.view.UploaderWindow</a></li><li><a href="wp.media.view.VideoDetails.html">wp.media.view.VideoDetails</a></li><li><a href="wp.NativeHandler.html">wp.NativeHandler</a></li><li><a href="wp.YouTubeHandler.html">wp.YouTubeHandler</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="mixins.list.html" class="dropdown-toggle" data-toggle="dropdown">Mixins<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.media.controller.StateMachine.html">wp.media.controller.StateMachine</a></li><li><a href="wp.media.mixin.html">wp.media.mixin</a></li><li><a href="wp.media.selectionSync.html">wp.media.selectionSync</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.media.controller.Region.html#event:activate">wp.media.controller.Region#event:activate</a></li><li><a href="wp.media.controller.Region.html#event:create">wp.media.controller.Region#event:create</a></li><li><a href="wp.media.controller.Region.html#event:deactivate">wp.media.controller.Region#event:deactivate</a></li><li><a href="wp.media.controller.Region.html#event:render">wp.media.controller.Region#event:render</a></li><li><a href="wp.media.view.Frame.html#event:%257Bmode%257D:deactivate">wp.media.view.Frame#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.AudioDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.AudioDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.EditAttachments.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.EditAttachments#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.ImageDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.ImageDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Manage.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Manage#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.MediaDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.MediaDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Post.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Post#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Select.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Select#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.VideoDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.VideoDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame#event:{mode}:deactivate</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#edAddTag">edAddTag</a></li><li><a href="global.html#edButton">edButton</a></li><li><a href="global.html#edInsertContent">edInsertContent</a></li><li><a href="global.html#quicktags">quicktags</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: mce-view.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/* global tinymce */
+
+/*
+ * The TinyMCE view API.
+ *
+ * Note: this API is "experimental" meaning that it will probably change
+ * in the next few releases based on feedback from 3.9.0.
+ * If you decide to use it, please follow the development closely.
+ *
+ * Diagram
+ *
+ * |- registered view constructor (type)
+ * |  |- view instance (unique text)
+ * |  |  |- editor 1
+ * |  |  |  |- view node
+ * |  |  |  |- view node
+ * |  |  |  |- ...
+ * |  |  |- editor 2
+ * |  |  |  |- ...
+ * |  |- view instance
+ * |  |  |- ...
+ * |- registered view
+ * |  |- ...
+ */
+( function( window, wp, shortcode, $ ) {
+	'use strict';
+
+	var views = {},
+		instances = {};
+
+	wp.mce = wp.mce || {};
+
+	/**
+	 * wp.mce.views
+	 *
+	 * A set of utilities that simplifies adding custom UI within a TinyMCE editor.
+	 * At its core, it serves as a series of converters, transforming text to a
+	 * custom UI, and back again.
+	 */
+	wp.mce.views = {
+
+		/**
+		 * Registers a new view type.
+		 *
+		 * @param {String} type   The view type.
+		 * @param {Object} extend An object to extend wp.mce.View.prototype with.
+		 */
+		register: function( type, extend ) {
+			views[ type ] = wp.mce.View.extend( _.extend( extend, { type: type } ) );
+		},
+
+		/**
+		 * Unregisters a view type.
+		 *
+		 * @param {String} type The view type.
+		 */
+		unregister: function( type ) {
+			delete views[ type ];
+		},
+
+		/**
+		 * Returns the settings of a view type.
+		 *
+		 * @param {String} type The view type.
+		 *
+		 * @return {Function} The view constructor.
+		 */
+		get: function( type ) {
+			return views[ type ];
+		},
+
+		/**
+		 * Unbinds all view nodes.
+		 * Runs before removing all view nodes from the DOM.
+		 */
+		unbind: function() {
+			_.each( instances, function( instance ) {
+				instance.unbind();
+			} );
+		},
+
+		/**
+		 * Scans a given string for each view's pattern,
+		 * replacing any matches with markers,
+		 * and creates a new instance for every match.
+		 *
+		 * @param {String} content The string to scan.
+		 *
+		 * @return {String} The string with markers.
+		 */
+		setMarkers: function( content ) {
+			var pieces = [ { content: content } ],
+				self = this,
+				instance, current;
+
+			_.each( views, function( view, type ) {
+				current = pieces.slice();
+				pieces  = [];
+
+				_.each( current, function( piece ) {
+					var remaining = piece.content,
+						result, text;
+
+					// Ignore processed pieces, but retain their location.
+					if ( piece.processed ) {
+						pieces.push( piece );
+						return;
+					}
+
+					// Iterate through the string progressively matching views
+					// and slicing the string as we go.
+					while ( remaining &amp;&amp; ( result = view.prototype.match( remaining ) ) ) {
+						// Any text before the match becomes an unprocessed piece.
+						if ( result.index ) {
+							pieces.push( { content: remaining.substring( 0, result.index ) } );
+						}
+
+						instance = self.createInstance( type, result.content, result.options );
+						text = instance.loader ? '.' : instance.text;
+
+						// Add the processed piece for the match.
+						pieces.push( {
+							content: instance.ignore ? text : '&lt;p data-wpview-marker="' + instance.encodedText + '">' + text + '&lt;/p>',
+							processed: true
+						} );
+
+						// Update the remaining content.
+						remaining = remaining.slice( result.index + result.content.length );
+					}
+
+					// There are no additional matches.
+					// If any content remains, add it as an unprocessed piece.
+					if ( remaining ) {
+						pieces.push( { content: remaining } );
+					}
+				} );
+			} );
+
+			content = _.pluck( pieces, 'content' ).join( '' );
+			return content.replace( /&lt;p>\s*&lt;p data-wpview-marker=/g, '&lt;p data-wpview-marker=' ).replace( /&lt;\/p>\s*&lt;\/p>/g, '&lt;/p>' );
+		},
+
+		/**
+		 * Create a view instance.
+		 *
+		 * @param {String}  type    The view type.
+		 * @param {String}  text    The textual representation of the view.
+		 * @param {Object}  options Options.
+		 * @param {Boolean} force   Recreate the instance. Optional.
+		 *
+		 * @return {wp.mce.View} The view instance.
+		 */
+		createInstance: function( type, text, options, force ) {
+			var View = this.get( type ),
+				encodedText,
+				instance;
+
+			text = tinymce.DOM.decode( text );
+
+			if ( text.indexOf( '[' ) !== -1 &amp;&amp; text.indexOf( ']' ) !== -1 ) {
+				// Looks like a shortcode? Remove any line breaks from inside of shortcodes
+				// or autop will replace them with &lt;p> and &lt;br> later and the string won't match.
+				text = text.replace( /\[[^\]]+\]/g, function( match ) {
+					return match.replace( /[\r\n]/g, '' );
+				});
+			}
+
+			if ( ! force ) {
+				instance = this.getInstance( text );
+
+				if ( instance ) {
+					return instance;
+				}
+			}
+
+			encodedText = encodeURIComponent( text );
+
+			options = _.extend( options || {}, {
+				text: text,
+				encodedText: encodedText
+			} );
+
+			return instances[ encodedText ] = new View( options );
+		},
+
+		/**
+		 * Get a view instance.
+		 *
+		 * @param {(String|HTMLElement)} object The textual representation of the view or the view node.
+		 *
+		 * @return {wp.mce.View} The view instance or undefined.
+		 */
+		getInstance: function( object ) {
+			if ( typeof object === 'string' ) {
+				return instances[ encodeURIComponent( object ) ];
+			}
+
+			return instances[ $( object ).attr( 'data-wpview-text' ) ];
+		},
+
+		/**
+		 * Given a view node, get the view's text.
+		 *
+		 * @param {HTMLElement} node The view node.
+		 *
+		 * @return {String} The textual representation of the view.
+		 */
+		getText: function( node ) {
+			return decodeURIComponent( $( node ).attr( 'data-wpview-text' ) || '' );
+		},
+
+		/**
+		 * Renders all view nodes that are not yet rendered.
+		 *
+		 * @param {Boolean} force Rerender all view nodes.
+		 */
+		render: function( force ) {
+			_.each( instances, function( instance ) {
+				instance.render( null, force );
+			} );
+		},
+
+		/**
+		 * Update the text of a given view node.
+		 *
+		 * @param {String}         text   The new text.
+		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
+		 * @param {HTMLElement}    node   The view node to update.
+		 * @param {Boolean}        force  Recreate the instance. Optional.
+		 */
+		update: function( text, editor, node, force ) {
+			var instance = this.getInstance( node );
+
+			if ( instance ) {
+				instance.update( text, editor, node, force );
+			}
+		},
+
+		/**
+		 * Renders any editing interface based on the view type.
+		 *
+		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
+		 * @param {HTMLElement}    node   The view node to edit.
+		 */
+		edit: function( editor, node ) {
+			var instance = this.getInstance( node );
+
+			if ( instance &amp;&amp; instance.edit ) {
+				instance.edit( instance.text, function( text, force ) {
+					instance.update( text, editor, node, force );
+				} );
+			}
+		},
+
+		/**
+		 * Remove a given view node from the DOM.
+		 *
+		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
+		 * @param {HTMLElement}    node   The view node to remove.
+		 */
+		remove: function( editor, node ) {
+			var instance = this.getInstance( node );
+
+			if ( instance ) {
+				instance.remove( editor, node );
+			}
+		}
+	};
+
+	/**
+	 * A Backbone-like View constructor intended for use when rendering a TinyMCE View.
+	 * The main difference is that the TinyMCE View is not tied to a particular DOM node.
+	 *
+	 * @param {Object} options Options.
+	 */
+	wp.mce.View = function( options ) {
+		_.extend( this, options );
+		this.initialize();
+	};
+
+	wp.mce.View.extend = Backbone.View.extend;
+
+	_.extend( wp.mce.View.prototype, /** @lends wp.mce.View.prototype */{
+
+		/**
+		 * The content.
+		 *
+		 * @type {*}
+		 */
+		content: null,
+
+		/**
+		 * Whether or not to display a loader.
+		 *
+		 * @type {Boolean}
+		 */
+		loader: true,
+
+		/**
+		 * Runs after the view instance is created.
+		 */
+		initialize: function() {},
+
+		/**
+		 * Returns the content to render in the view node.
+		 *
+		 * @return {*}
+		 */
+		getContent: function() {
+			return this.content;
+		},
+
+		/**
+		 * Renders all view nodes tied to this view instance that are not yet rendered.
+		 *
+		 * @param {String}  content The content to render. Optional.
+		 * @param {Boolean} force   Rerender all view nodes tied to this view instance. Optional.
+		 */
+		render: function( content, force ) {
+			if ( content != null ) {
+				this.content = content;
+			}
+
+			content = this.getContent();
+
+			// If there's nothing to render an no loader needs to be shown, stop.
+			if ( ! this.loader &amp;&amp; ! content ) {
+				return;
+			}
+
+			// We're about to rerender all views of this instance, so unbind rendered views.
+			force &amp;&amp; this.unbind();
+
+			// Replace any left over markers.
+			this.replaceMarkers();
+
+			if ( content ) {
+				this.setContent( content, function( editor, node ) {
+					$( node ).data( 'rendered', true );
+					this.bindNode.call( this, editor, node );
+				}, force ? null : false );
+			} else {
+				this.setLoader();
+			}
+		},
+
+		/**
+		 * Binds a given node after its content is added to the DOM.
+		 */
+		bindNode: function() {},
+
+		/**
+		 * Unbinds a given node before its content is removed from the DOM.
+		 */
+		unbindNode: function() {},
+
+		/**
+		 * Unbinds all view nodes tied to this view instance.
+		 * Runs before their content is removed from the DOM.
+		 */
+		unbind: function() {
+			this.getNodes( function( editor, node ) {
+				this.unbindNode.call( this, editor, node );
+			}, true );
+		},
+
+		/**
+		 * Gets all the TinyMCE editor instances that support views.
+		 *
+		 * @param {Function} callback A callback.
+		 */
+		getEditors: function( callback ) {
+			_.each( tinymce.editors, function( editor ) {
+				if ( editor.plugins.wpview ) {
+					callback.call( this, editor );
+				}
+			}, this );
+		},
+
+		/**
+		 * Gets all view nodes tied to this view instance.
+		 *
+		 * @param {Function} callback A callback.
+		 * @param {Boolean}  rendered Get (un)rendered view nodes. Optional.
+		 */
+		getNodes: function( callback, rendered ) {
+			this.getEditors( function( editor ) {
+				var self = this;
+
+				$( editor.getBody() )
+					.find( '[data-wpview-text="' + self.encodedText + '"]' )
+					.filter( function() {
+						var data;
+
+						if ( rendered == null ) {
+							return true;
+						}
+
+						data = $( this ).data( 'rendered' ) === true;
+
+						return rendered ? data : ! data;
+					} )
+					.each( function() {
+						callback.call( self, editor, this, this /* back compat */ );
+					} );
+			} );
+		},
+
+		/**
+		 * Gets all marker nodes tied to this view instance.
+		 *
+		 * @param {Function} callback A callback.
+		 */
+		getMarkers: function( callback ) {
+			this.getEditors( function( editor ) {
+				var self = this;
+
+				$( editor.getBody() )
+					.find( '[data-wpview-marker="' + this.encodedText + '"]' )
+					.each( function() {
+						callback.call( self, editor, this );
+					} );
+			} );
+		},
+
+		/**
+		 * Replaces all marker nodes tied to this view instance.
+		 */
+		replaceMarkers: function() {
+			this.getMarkers( function( editor, node ) {
+				var selected = node === editor.selection.getNode();
+				var $viewNode;
+
+				if ( ! this.loader &amp;&amp; $( node ).text() !== this.text ) {
+					editor.dom.setAttrib( node, 'data-wpview-marker', null );
+					return;
+				}
+
+				$viewNode = editor.$(
+					'&lt;div class="wpview wpview-wrap" data-wpview-text="' + this.encodedText + '" data-wpview-type="' + this.type + '" contenteditable="false">&lt;/div>'
+				);
+
+				editor.$( node ).replaceWith( $viewNode );
+
+				if ( selected ) {
+					setTimeout( function() {
+						editor.selection.select( $viewNode[0] );
+						editor.selection.collapse();
+					} );
+				}
+			} );
+		},
+
+		/**
+		 * Removes all marker nodes tied to this view instance.
+		 */
+		removeMarkers: function() {
+			this.getMarkers( function( editor, node ) {
+				editor.dom.setAttrib( node, 'data-wpview-marker', null );
+			} );
+		},
+
+		/**
+		 * Sets the content for all view nodes tied to this view instance.
+		 *
+		 * @param {*}        content  The content to set.
+		 * @param {Function} callback A callback. Optional.
+		 * @param {Boolean}  rendered Only set for (un)rendered nodes. Optional.
+		 */
+		setContent: function( content, callback, rendered ) {
+			if ( _.isObject( content ) &amp;&amp; ( content.sandbox || content.head || content.body.indexOf( '&lt;script' ) !== -1 ) ) {
+				this.setIframes( content.head || '', content.body, callback, rendered );
+			} else if ( _.isString( content ) &amp;&amp; content.indexOf( '&lt;script' ) !== -1 ) {
+				this.setIframes( '', content, callback, rendered );
+			} else {
+				this.getNodes( function( editor, node ) {
+					content = content.body || content;
+
+					if ( content.indexOf( '&lt;iframe' ) !== -1 ) {
+						content += '&lt;span class="mce-shim">&lt;/span>';
+					}
+
+					editor.undoManager.transact( function() {
+						node.innerHTML = '';
+						node.appendChild( _.isString( content ) ? editor.dom.createFragment( content ) : content );
+						editor.dom.add( node, 'span', { 'class': 'wpview-end' } );
+					} );
+
+					callback &amp;&amp; callback.call( this, editor, node );
+				}, rendered );
+			}
+		},
+
+		/**
+		 * Sets the content in an iframe for all view nodes tied to this view instance.
+		 *
+		 * @param {String}   head     HTML string to be added to the head of the document.
+		 * @param {String}   body     HTML string to be added to the body of the document.
+		 * @param {Function} callback A callback. Optional.
+		 * @param {Boolean}  rendered Only set for (un)rendered nodes. Optional.
+		 */
+		setIframes: function( head, body, callback, rendered ) {
+			var self = this;
+
+			this.getNodes( function( editor, node ) {
+				var dom = editor.dom,
+					styles = '',
+					bodyClasses = editor.getBody().className || '',
+					editorHead = editor.getDoc().getElementsByTagName( 'head' )[0],
+					iframe, iframeWin, iframeDoc, MutationObserver, observer, i, block;
+
+				tinymce.each( dom.$( 'link[rel="stylesheet"]', editorHead ), function( link ) {
+					if ( link.href &amp;&amp; link.href.indexOf( 'skins/lightgray/content.min.css' ) === -1 &amp;&amp;
+						link.href.indexOf( 'skins/wordpress/wp-content.css' ) === -1 ) {
+
+						styles += dom.getOuterHTML( link );
+					}
+				} );
+
+				if ( self.iframeHeight ) {
+					dom.add( node, 'span', {
+						'data-mce-bogus': 1,
+						style: {
+							display: 'block',
+							width: '100%',
+							height: self.iframeHeight
+						}
+					}, '\u200B' );
+				}
+
+				editor.undoManager.transact( function() {
+					node.innerHTML = '';
+
+					iframe = dom.add( node, 'iframe', {
+						/* jshint scripturl: true */
+						src: tinymce.Env.ie ? 'javascript:""' : '',
+						frameBorder: '0',
+						allowTransparency: 'true',
+						scrolling: 'no',
+						'class': 'wpview-sandbox',
+						style: {
+							width: '100%',
+							display: 'block'
+						},
+						height: self.iframeHeight
+					} );
+
+					dom.add( node, 'span', { 'class': 'mce-shim' } );
+					dom.add( node, 'span', { 'class': 'wpview-end' } );
+				} );
+
+				// Bail if the iframe node is not attached to the DOM.
+				// Happens when the view is dragged in the editor.
+				// There is a browser restriction when iframes are moved in the DOM. They get emptied.
+				// The iframe will be rerendered after dropping the view node at the new location.
+				if ( ! iframe.contentWindow ) {
+					return;
+				}
+
+				iframeWin = iframe.contentWindow;
+				iframeDoc = iframeWin.document;
+				iframeDoc.open();
+
+				iframeDoc.write(
+					'&lt;!DOCTYPE html>' +
+					'&lt;html>' +
+						'&lt;head>' +
+							'&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />' +
+							head +
+							styles +
+							'&lt;style>' +
+								'html {' +
+									'background: transparent;' +
+									'padding: 0;' +
+									'margin: 0;' +
+								'}' +
+								'body#wpview-iframe-sandbox {' +
+									'background: transparent;' +
+									'padding: 1px 0 !important;' +
+									'margin: -1px 0 0 !important;' +
+								'}' +
+								'body#wpview-iframe-sandbox:before,' +
+								'body#wpview-iframe-sandbox:after {' +
+									'display: none;' +
+									'content: "";' +
+								'}' +
+								'iframe {' +
+									'max-width: 100%;' +
+								'}' +
+							'&lt;/style>' +
+						'&lt;/head>' +
+						'&lt;body id="wpview-iframe-sandbox" class="' + bodyClasses + '">' +
+							body +
+						'&lt;/body>' +
+					'&lt;/html>'
+				);
+
+				iframeDoc.close();
+
+				function resize() {
+					var $iframe;
+
+					if ( block ) {
+						return;
+					}
+
+					// Make sure the iframe still exists.
+					if ( iframe.contentWindow ) {
+						$iframe = $( iframe );
+						self.iframeHeight = $( iframeDoc.body ).height();
+
+						if ( $iframe.height() !== self.iframeHeight ) {
+							$iframe.height( self.iframeHeight );
+							editor.nodeChanged();
+						}
+					}
+				}
+
+				if ( self.iframeHeight ) {
+					block = true;
+
+					setTimeout( function() {
+						block = false;
+						resize();
+					}, 3000 );
+				}
+
+				function reload() {
+					if ( ! editor.isHidden() ) {
+						$( node ).data( 'rendered', null );
+
+						setTimeout( function() {
+							wp.mce.views.render();
+						} );
+					}
+				}
+
+				function addObserver() {
+					observer = new MutationObserver( _.debounce( resize, 100 ) );
+
+					observer.observe( iframeDoc.body, {
+						attributes: true,
+						childList: true,
+						subtree: true
+					} );
+				}
+
+				$( iframeWin ).on( 'load', resize ).on( 'unload', reload );
+
+				MutationObserver = iframeWin.MutationObserver || iframeWin.WebKitMutationObserver || iframeWin.MozMutationObserver;
+
+				if ( MutationObserver ) {
+					if ( ! iframeDoc.body ) {
+						iframeDoc.addEventListener( 'DOMContentLoaded', addObserver, false );
+					} else {
+						addObserver();
+					}
+				} else {
+					for ( i = 1; i &lt; 6; i++ ) {
+						setTimeout( resize, i * 700 );
+					}
+				}
+
+				callback &amp;&amp; callback.call( self, editor, node );
+			}, rendered );
+		},
+
+		/**
+		 * Sets a loader for all view nodes tied to this view instance.
+		 */
+		setLoader: function( dashicon ) {
+			this.setContent(
+				'&lt;div class="loading-placeholder">' +
+					'&lt;div class="dashicons dashicons-' + ( dashicon || 'admin-media' ) + '">&lt;/div>' +
+					'&lt;div class="wpview-loading">&lt;ins>&lt;/ins>&lt;/div>' +
+				'&lt;/div>'
+			);
+		},
+
+		/**
+		 * Sets an error for all view nodes tied to this view instance.
+		 *
+		 * @param {String} message  The error message to set.
+		 * @param {String} dashicon A dashicon ID. Optional. {@link https://developer.wordpress.org/resource/dashicons/}
+		 */
+		setError: function( message, dashicon ) {
+			this.setContent(
+				'&lt;div class="wpview-error">' +
+					'&lt;div class="dashicons dashicons-' + ( dashicon || 'no' ) + '">&lt;/div>' +
+					'&lt;p>' + message + '&lt;/p>' +
+				'&lt;/div>'
+			);
+		},
+
+		/**
+		 * Tries to find a text match in a given string.
+		 *
+		 * @param {String} content The string to scan.
+		 *
+		 * @return {Object}
+		 */
+		match: function( content ) {
+			var match = shortcode.next( this.type, content );
+
+			if ( match ) {
+				return {
+					index: match.index,
+					content: match.content,
+					options: {
+						shortcode: match.shortcode
+					}
+				};
+			}
+		},
+
+		/**
+		 * Update the text of a given view node.
+		 *
+		 * @param {String}         text   The new text.
+		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
+		 * @param {HTMLElement}    node   The view node to update.
+		 * @param {Boolean}        force  Recreate the instance. Optional.
+		 */
+		update: function( text, editor, node, force ) {
+			_.find( views, function( view, type ) {
+				var match = view.prototype.match( text );
+
+				if ( match ) {
+					$( node ).data( 'rendered', false );
+					editor.dom.setAttrib( node, 'data-wpview-text', encodeURIComponent( text ) );
+					wp.mce.views.createInstance( type, text, match.options, force ).render();
+
+					editor.selection.select( node );
+					editor.nodeChanged();
+					editor.focus();
+
+					return true;
+				}
+			} );
+		},
+
+		/**
+		 * Remove a given view node from the DOM.
+		 *
+		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
+		 * @param {HTMLElement}    node   The view node to remove.
+		 */
+		remove: function( editor, node ) {
+			this.unbindNode.call( this, editor, node );
+			editor.dom.remove( node );
+			editor.focus();
+		}
+	} );
+} )( window, window.wp, window.wp.shortcode, window.jQuery );
+
+/*
+ * The WordPress core TinyMCE views.
+ * Views for the gallery, audio, video, playlist and embed shortcodes,
+ * and a view for embeddable URLs.
+ */
+( function( window, views, media, $ ) {
+	var base, gallery, av, embed,
+		schema, parser, serializer;
+
+	function verifyHTML( string ) {
+		var settings = {};
+
+		if ( ! window.tinymce ) {
+			return string.replace( /&lt;[^>]+>/g, '' );
+		}
+
+		if ( ! string || ( string.indexOf( '&lt;' ) === -1 &amp;&amp; string.indexOf( '>' ) === -1 ) ) {
+			return string;
+		}
+
+		schema = schema || new window.tinymce.html.Schema( settings );
+		parser = parser || new window.tinymce.html.DomParser( settings, schema );
+		serializer = serializer || new window.tinymce.html.Serializer( settings, schema );
+
+		return serializer.serialize( parser.parse( string, { forced_root_block: false } ) );
+	}
+
+	base = {
+		state: [],
+
+		edit: function( text, update ) {
+			var type = this.type,
+				frame = media[ type ].edit( text );
+
+			this.pausePlayers &amp;&amp; this.pausePlayers();
+
+			_.each( this.state, function( state ) {
+				frame.state( state ).on( 'update', function( selection ) {
+					update( media[ type ].shortcode( selection ).string(), type === 'gallery' );
+				} );
+			} );
+
+			frame.on( 'close', function() {
+				frame.detach();
+			} );
+
+			frame.open();
+		}
+	};
+
+	gallery = _.extend( {}, base, {
+		state: [ 'gallery-edit' ],
+		template: media.template( 'editor-gallery' ),
+
+		initialize: function() {
+			var attachments = media.gallery.attachments( this.shortcode, media.view.settings.post.id ),
+				attrs = this.shortcode.attrs.named,
+				self = this;
+
+			attachments.more()
+			.done( function() {
+				attachments = attachments.toJSON();
+
+				_.each( attachments, function( attachment ) {
+					if ( attachment.sizes ) {
+						if ( attrs.size &amp;&amp; attachment.sizes[ attrs.size ] ) {
+							attachment.thumbnail = attachment.sizes[ attrs.size ];
+						} else if ( attachment.sizes.thumbnail ) {
+							attachment.thumbnail = attachment.sizes.thumbnail;
+						} else if ( attachment.sizes.full ) {
+							attachment.thumbnail = attachment.sizes.full;
+						}
+					}
+				} );
+
+				self.render( self.template( {
+					verifyHTML: verifyHTML,
+					attachments: attachments,
+					columns: attrs.columns ? parseInt( attrs.columns, 10 ) : media.galleryDefaults.columns
+				} ) );
+			} )
+			.fail( function( jqXHR, textStatus ) {
+				self.setError( textStatus );
+			} );
+		}
+	} );
+
+	av = _.extend( {}, base, {
+		action: 'parse-media-shortcode',
+
+		initialize: function() {
+			var self = this;
+
+			if ( this.url ) {
+				this.loader = false;
+				this.shortcode = media.embed.shortcode( {
+					url: this.text
+				} );
+			}
+
+			wp.ajax.post( this.action, {
+				post_ID: media.view.settings.post.id,
+				type: this.shortcode.tag,
+				shortcode: this.shortcode.string()
+			} )
+			.done( function( response ) {
+				self.render( response );
+			} )
+			.fail( function( response ) {
+				if ( self.url ) {
+					self.ignore = true;
+					self.removeMarkers();
+				} else {
+					self.setError( response.message || response.statusText, 'admin-media' );
+				}
+			} );
+
+			this.getEditors( function( editor ) {
+				editor.on( 'wpview-selected', function() {
+					self.pausePlayers();
+				} );
+			} );
+		},
+
+		pausePlayers: function() {
+			this.getNodes( function( editor, node, content ) {
+				var win = $( 'iframe.wpview-sandbox', content ).get( 0 );
+
+				if ( win &amp;&amp; ( win = win.contentWindow ) &amp;&amp; win.mejs ) {
+					_.each( win.mejs.players, function( player ) {
+						try {
+							player.pause();
+						} catch ( e ) {}
+					} );
+				}
+			} );
+		}
+	} );
+
+	embed = _.extend( {}, av, {
+		action: 'parse-embed',
+
+		edit: function( text, update ) {
+			var frame = media.embed.edit( text, this.url ),
+				self = this;
+
+			this.pausePlayers();
+
+			frame.state( 'embed' ).props.on( 'change:url', function( model, url ) {
+				if ( url &amp;&amp; model.get( 'url' ) ) {
+					frame.state( 'embed' ).metadata = model.toJSON();
+				}
+			} );
+
+			frame.state( 'embed' ).on( 'select', function() {
+				var data = frame.state( 'embed' ).metadata;
+
+				if ( self.url ) {
+					update( data.url );
+				} else {
+					update( media.embed.shortcode( data ).string() );
+				}
+			} );
+
+			frame.on( 'close', function() {
+				frame.detach();
+			} );
+
+			frame.open();
+		}
+	} );
+
+	views.register( 'gallery', _.extend( {}, gallery ) );
+
+	views.register( 'audio', _.extend( {}, av, {
+		state: [ 'audio-details' ]
+	} ) );
+
+	views.register( 'video', _.extend( {}, av, {
+		state: [ 'video-details' ]
+	} ) );
+
+	views.register( 'playlist', _.extend( {}, av, {
+		state: [ 'playlist-edit', 'video-playlist-edit' ]
+	} ) );
+
+	views.register( 'embed', _.extend( {}, embed ) );
+
+	views.register( 'embedURL', _.extend( {}, embed, {
+		match: function( content ) {
+			var re = /(^|&lt;p>)(https?:\/\/[^\s"]+?)(&lt;\/p>\s*|$)/gi,
+				match = re.exec( content );
+
+			if ( match ) {
+				return {
+					index: match.index + match[1].length,
+					content: match[2],
+					options: {
+						url: true
+					}
+				};
+			}
+		}
+	} ) );
+} )( window, window.wp.mce.views, window.wp.media, window.jQuery );
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.4</a>
+	
+		on 2017-08-21T10:24:33+02:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

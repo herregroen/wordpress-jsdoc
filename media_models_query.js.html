@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Source: media/models/query.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.united.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.html">wp</a></li><li><a href="wp.a11y.html">wp.a11y</a></li><li><a href="wp.api.html">wp.api</a></li><li><a href="wp.api.collections.html">wp.api.collections</a></li><li><a href="wp.api.models.html">wp.api.models</a></li><li><a href="wp.api.utils.html">wp.api.utils</a></li><li><a href="wp.api.views.html">wp.api.views</a></li><li><a href="wp.Backbone.html">wp.Backbone</a></li><li><a href="wp.customize.html">wp.customize</a></li><li><a href="wp.customize.HeaderTool.html">wp.customize.HeaderTool</a></li><li><a href="wp.customize.navMenusPreview.html">wp.customize.navMenusPreview</a></li><li><a href="wp.customize.selectiveRefresh.html">wp.customize.selectiveRefresh</a></li><li><a href="wp.customize.utils.html">wp.customize.utils</a></li><li><a href="wp.customize.widgetsPreview.html">wp.customize.widgetsPreview</a></li><li><a href="wp.html#.media">wp.media</a></li><li><a href="wp.media.audio.html">wp.media.audio</a></li><li><a href="wp.media.controller.html">wp.media.controller</a></li><li><a href="wp.media.editor.html">wp.media.editor</a></li><li><a href="wp.media.editor.send.html">wp.media.editor.send</a></li><li><a href="wp.media.frames.html">wp.media.frames</a></li><li><a href="wp.media.model.html">wp.media.model</a></li><li><a href="wp.media.model.Attachments.filters.html">wp.media.model.Attachments.filters</a></li><li><a href="wp.media.string.html">wp.media.string</a></li><li><a href="wp.media.video.html">wp.media.video</a></li><li><a href="wp.media.view.html">wp.media.view</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="$.widget.wp.pointer.html">$.widget.wp.pointer</a></li><li><a href="wp.BaseHandler.html">wp.BaseHandler</a></li><li><a href="wp.CustomHeader.html">wp.CustomHeader</a></li><li><a href="wp.customize.ChoiceListView.html">wp.customize.ChoiceListView</a></li><li><a href="wp.customize.ChoiceView.html">wp.customize.ChoiceView</a></li><li><a href="wp.customize.CombinedList.html">wp.customize.CombinedList</a></li><li><a href="wp.customize.CurrentView.html">wp.customize.CurrentView</a></li><li><a href="wp.customize.Element.html">wp.customize.Element</a></li><li><a href="wp.customize.HeaderTool.ChoiceList.html">wp.customize.HeaderTool.ChoiceList</a></li><li><a href="wp.customize.HeaderTool.DefaultsList.html">wp.customize.HeaderTool.DefaultsList</a></li><li><a href="wp.customize.HeaderTool.ImageModel.html">wp.customize.HeaderTool.ImageModel</a></li><li><a href="wp.customize.Loader.html">wp.customize.Loader</a></li><li><a href="wp.customize.Messenger.html">wp.customize.Messenger</a></li><li><a href="wp.customize.navMenusPreview.NavMenuInstancePartial.html">wp.customize.navMenusPreview.NavMenuInstancePartial</a></li><li><a href="wp.customize.Notification.html">wp.customize.Notification</a></li><li><a href="wp.customize.Preview.html">wp.customize.Preview</a></li><li><a href="wp.customize.selectiveRefresh.Partial.html">wp.customize.selectiveRefresh.Partial</a></li><li><a href="wp.customize.selectiveRefresh.Placement.html">wp.customize.selectiveRefresh.Placement</a></li><li><a href="wp.customize.Value.html">wp.customize.Value</a></li><li><a href="wp.customize.Values.html">wp.customize.Values</a></li><li><a href="wp.customize.widgetsPreview.SidebarPartial.html">wp.customize.widgetsPreview.SidebarPartial</a></li><li><a href="wp.customize.widgetsPreview.WidgetPartial.html">wp.customize.widgetsPreview.WidgetPartial</a></li><li><a href="wp.media.collectio.html">wp.media.collectio</a></li><li><a href="wp.media.controller.AudioDetails.html">wp.media.controller.AudioDetails</a></li><li><a href="wp.media.controller.CollectionAdd.html">wp.media.controller.CollectionAdd</a></li><li><a href="wp.media.controller.CollectionEdit.html">wp.media.controller.CollectionEdit</a></li><li><a href="wp.media.controller.Cropper.html">wp.media.controller.Cropper</a></li><li><a href="wp.media.controller.EditAttachmentMetadata.html">wp.media.controller.EditAttachmentMetadata</a></li><li><a href="wp.media.controller.EditImage.html">wp.media.controller.EditImage</a></li><li><a href="wp.media.controller.Embed.html">wp.media.controller.Embed</a></li><li><a href="wp.media.controller.FeaturedImage.html">wp.media.controller.FeaturedImage</a></li><li><a href="wp.media.controller.GalleryAdd.html">wp.media.controller.GalleryAdd</a></li><li><a href="wp.media.controller.GalleryEdit.html">wp.media.controller.GalleryEdit</a></li><li><a href="wp.media.controller.ImageDetails.html">wp.media.controller.ImageDetails</a></li><li><a href="wp.media.controller.Library.html">wp.media.controller.Library</a></li><li><a href="wp.media.controller.Region.html">wp.media.controller.Region</a></li><li><a href="wp.media.controller.ReplaceImage.html">wp.media.controller.ReplaceImage</a></li><li><a href="wp.media.controller.SiteIconCropper.html">wp.media.controller.SiteIconCropper</a></li><li><a href="wp.media.controller.State.html">wp.media.controller.State</a></li><li><a href="wp.media.controller%250A%250AA%2520state%2520for%2520cropping%2520an%2520image.CustomizeImageCropper.html">wp.media.controller
+
+A state for cropping an image.CustomizeImageCropper</a></li><li><a href="wp.media.model.Attachment.html">wp.media.model.Attachment</a></li><li><a href="wp.media.model.Attachments.html">wp.media.model.Attachments</a></li><li><a href="wp.media.model.PostImage.html">wp.media.model.PostImage</a></li><li><a href="wp.media.model.PostMedia.html">wp.media.model.PostMedia</a></li><li><a href="wp.media.model.Query.html">wp.media.model.Query</a></li><li><a href="wp.media.model.Selection.html">wp.media.model.Selection</a></li><li><a href="wp.media.View_.html">wp.media.View</a></li><li><a href="wp.media.view.Attachment.html">wp.media.view.Attachment</a></li><li><a href="wp.media.view.Attachment.Details.html">wp.media.view.Attachment.Details</a></li><li><a href="wp.media.view.Attachment.Details.TwoColumn.html">wp.media.view.Attachment.Details.TwoColumn</a></li><li><a href="wp.media.view.Attachment.EditLibrary.html">wp.media.view.Attachment.EditLibrary</a></li><li><a href="wp.media.view.Attachment.EditSelection.html">wp.media.view.Attachment.EditSelection</a></li><li><a href="wp.media.view.Attachment.Library.html">wp.media.view.Attachment.Library</a></li><li><a href="wp.media.view.Attachment.Selection.html">wp.media.view.Attachment.Selection</a></li><li><a href="wp.media.view.AttachmentCompat.html">wp.media.view.AttachmentCompat</a></li><li><a href="wp.media.view.AttachmentFilters.html">wp.media.view.AttachmentFilters</a></li><li><a href="wp.media.view.AttachmentFilters.All.html">wp.media.view.AttachmentFilters.All</a></li><li><a href="wp.media.view.AttachmentFilters.DateFilter.html">wp.media.view.AttachmentFilters.DateFilter</a></li><li><a href="wp.media.view.AttachmentFilters.Uploaded.html">wp.media.view.AttachmentFilters.Uploaded</a></li><li><a href="wp.media.view.Attachments.html">wp.media.view.Attachments</a></li><li><a href="wp.media.view.Attachments.Selection.html">wp.media.view.Attachments.Selection</a></li><li><a href="wp.media.view.AttachmentsBrowser.html">wp.media.view.AttachmentsBrowser</a></li><li><a href="wp.media.view.AudioDetails.html">wp.media.view.AudioDetails</a></li><li><a href="wp.media.view.Button.html">wp.media.view.Button</a></li><li><a href="wp.media.view.ButtonGroup.html">wp.media.view.ButtonGroup</a></li><li><a href="wp.media.view.Cropper.html">wp.media.view.Cropper</a></li><li><a href="wp.media.view.DeleteSelected.html">wp.media.view.DeleteSelected</a></li><li><a href="wp.media.view.DeleteSelectedPermanently.html">wp.media.view.DeleteSelectedPermanently</a></li><li><a href="wp.media.view.EditImage.html">wp.media.view.EditImage</a></li><li><a href="wp.media.view.EditImage.Details.html">wp.media.view.EditImage.Details</a></li><li><a href="wp.media.view.EditorUploader.html">wp.media.view.EditorUploader</a></li><li><a href="wp.media.view.Embed.html">wp.media.view.Embed</a></li><li><a href="wp.media.view.EmbedImage.html">wp.media.view.EmbedImage</a></li><li><a href="wp.media.view.EmbedLink.html">wp.media.view.EmbedLink</a></li><li><a href="wp.media.view.EmbedUrl.html">wp.media.view.EmbedUrl</a></li><li><a href="wp.media.view.FocusManager.html">wp.media.view.FocusManager</a></li><li><a href="wp.media.view.Frame.html">wp.media.view.Frame</a></li><li><a href="wp.media.view.Iframe.html">wp.media.view.Iframe</a></li><li><a href="wp.media.view.ImageDetails.html">wp.media.view.ImageDetails</a></li><li><a href="wp.media.view.Label.html">wp.media.view.Label</a></li><li><a href="wp.media.view.MediaDetails.html">wp.media.view.MediaDetails</a></li><li><a href="wp.media.view.MediaFrame.html">wp.media.view.MediaFrame</a></li><li><a href="wp.media.view.MediaFrame.AudioDetails.html">wp.media.view.MediaFrame.AudioDetails</a></li><li><a href="wp.media.view.MediaFrame.EditAttachments.html">wp.media.view.MediaFrame.EditAttachments</a></li><li><a href="wp.media.view.MediaFrame.ImageDetails.html">wp.media.view.MediaFrame.ImageDetails</a></li><li><a href="wp.media.view.MediaFrame.Manage.html">wp.media.view.MediaFrame.Manage</a></li><li><a href="wp.media.view.MediaFrame.Manage.Router.html">wp.media.view.MediaFrame.Manage.Router</a></li><li><a href="wp.media.view.MediaFrame.MediaDetails.html">wp.media.view.MediaFrame.MediaDetails</a></li><li><a href="wp.media.view.MediaFrame.Post.html">wp.media.view.MediaFrame.Post</a></li><li><a href="wp.media.view.MediaFrame.Select.html">wp.media.view.MediaFrame.Select</a></li><li><a href="wp.media.view.MediaFrame.VideoDetails.html">wp.media.view.MediaFrame.VideoDetails</a></li><li><a href="wp.media.view.Menu.html">wp.media.view.Menu</a></li><li><a href="wp.media.view.MenuItem.html">wp.media.view.MenuItem</a></li><li><a href="wp.media.view.Modal.html">wp.media.view.Modal</a></li><li><a href="wp.media.view.PriorityList.html">wp.media.view.PriorityList</a></li><li><a href="wp.media.view.Router.html">wp.media.view.Router</a></li><li><a href="wp.media.view.RouterItem.html">wp.media.view.RouterItem</a></li><li><a href="wp.media.view.Search.html">wp.media.view.Search</a></li><li><a href="wp.media.view.Selection.html">wp.media.view.Selection</a></li><li><a href="wp.media.view.SelectModeToggle.html">wp.media.view.SelectModeToggle</a></li><li><a href="wp.media.view.Settings.html">wp.media.view.Settings</a></li><li><a href="wp.media.view.Settings.AttachmentDisplay.html">wp.media.view.Settings.AttachmentDisplay</a></li><li><a href="wp.media.view.Settings.Gallery.html">wp.media.view.Settings.Gallery</a></li><li><a href="wp.media.view.Settings.Playlist.html">wp.media.view.Settings.Playlist</a></li><li><a href="wp.media.view.Sidebar.html">wp.media.view.Sidebar</a></li><li><a href="wp.media.view.SiteIconCropper.html">wp.media.view.SiteIconCropper</a></li><li><a href="wp.media.view.SiteIconPreview.html">wp.media.view.SiteIconPreview</a></li><li><a href="wp.media.view.Spinner.html">wp.media.view.Spinner</a></li><li><a href="wp.media.view.Toolbar.html">wp.media.view.Toolbar</a></li><li><a href="wp.media.view.Toolbar.Embed.html">wp.media.view.Toolbar.Embed</a></li><li><a href="wp.media.view.Toolbar.Select.html">wp.media.view.Toolbar.Select</a></li><li><a href="wp.media.view.UploaderInline.html">wp.media.view.UploaderInline</a></li><li><a href="wp.media.view.UploaderStatus.html">wp.media.view.UploaderStatus</a></li><li><a href="wp.media.view.UploaderStatusError.html">wp.media.view.UploaderStatusError</a></li><li><a href="wp.media.view.UploaderWindow.html">wp.media.view.UploaderWindow</a></li><li><a href="wp.media.view.VideoDetails.html">wp.media.view.VideoDetails</a></li><li><a href="wp.NativeHandler.html">wp.NativeHandler</a></li><li><a href="wp.YouTubeHandler.html">wp.YouTubeHandler</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="mixins.list.html" class="dropdown-toggle" data-toggle="dropdown">Mixins<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.media.controller.StateMachine.html">wp.media.controller.StateMachine</a></li><li><a href="wp.media.mixin.html">wp.media.mixin</a></li><li><a href="wp.media.selectionSync.html">wp.media.selectionSync</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="wp.media.controller.Region.html#event:activate">wp.media.controller.Region#event:activate</a></li><li><a href="wp.media.controller.Region.html#event:create">wp.media.controller.Region#event:create</a></li><li><a href="wp.media.controller.Region.html#event:deactivate">wp.media.controller.Region#event:deactivate</a></li><li><a href="wp.media.controller.Region.html#event:render">wp.media.controller.Region#event:render</a></li><li><a href="wp.media.view.Frame.html#event:%257Bmode%257D:deactivate">wp.media.view.Frame#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.AudioDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.AudioDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.EditAttachments.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.EditAttachments#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.ImageDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.ImageDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Manage.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Manage#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.MediaDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.MediaDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Post.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Post#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.Select.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.Select#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.VideoDetails.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame.VideoDetails#event:{mode}:deactivate</a></li><li><a href="wp.media.view.MediaFrame.html#event:%257Bmode%257D:deactivate">wp.media.view.MediaFrame#event:{mode}:deactivate</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#edAddTag">edAddTag</a></li><li><a href="global.html#edButton">edButton</a></li><li><a href="global.html#edInsertContent">edInsertContent</a></li><li><a href="global.html#quicktags">quicktags</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: media/models/query.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">var Attachments = wp.media.model.Attachments,
+	Query;
+
+/**
+ * wp.media.model.Query
+ *
+ * A collection of attachments that match the supplied query arguments.
+ *
+ * Note: Do NOT change this.args after the query has been initialized.
+ *       Things will break.
+ *
+ * @memberOf wp.media.model
+ *
+ * @class
+ * @augments wp.media.model.Attachments
+ * @augments Backbone.Collection
+ *
+ * @param {array}  [models]                      Models to initialize with the collection.
+ * @param {object} [options]                     Options hash.
+ * @param {object} [options.args]                Attachments query arguments.
+ * @param {object} [options.args.posts_per_page]
+ */
+Query = Attachments.extend(/** @lends wp.media.model.Query.prototype */{
+	/**
+	 * @param {array}  [models=[]]  Array of initial models to populate the collection.
+	 * @param {object} [options={}]
+	 */
+	initialize: function( models, options ) {
+		var allowed;
+
+		options = options || {};
+		Attachments.prototype.initialize.apply( this, arguments );
+
+		this.args     = options.args;
+		this._hasMore = true;
+		this.created  = new Date();
+
+		this.filters.order = function( attachment ) {
+			var orderby = this.props.get('orderby'),
+				order = this.props.get('order');
+
+			if ( ! this.comparator ) {
+				return true;
+			}
+
+			// We want any items that can be placed before the last
+			// item in the set. If we add any items after the last
+			// item, then we can't guarantee the set is complete.
+			if ( this.length ) {
+				return 1 !== this.comparator( attachment, this.last(), { ties: true });
+
+			// Handle the case where there are no items yet and
+			// we're sorting for recent items. In that case, we want
+			// changes that occurred after we created the query.
+			} else if ( 'DESC' === order &amp;&amp; ( 'date' === orderby || 'modified' === orderby ) ) {
+				return attachment.get( orderby ) >= this.created;
+
+			// If we're sorting by menu order and we have no items,
+			// accept any items that have the default menu order (0).
+			} else if ( 'ASC' === order &amp;&amp; 'menuOrder' === orderby ) {
+				return attachment.get( orderby ) === 0;
+			}
+
+			// Otherwise, we don't want any items yet.
+			return false;
+		};
+
+		// Observe the central `wp.Uploader.queue` collection to watch for
+		// new matches for the query.
+		//
+		// Only observe when a limited number of query args are set. There
+		// are no filters for other properties, so observing will result in
+		// false positives in those queries.
+		allowed = [ 's', 'order', 'orderby', 'posts_per_page', 'post_mime_type', 'post_parent' ];
+		if ( wp.Uploader &amp;&amp; _( this.args ).chain().keys().difference( allowed ).isEmpty().value() ) {
+			this.observe( wp.Uploader.queue );
+		}
+	},
+	/**
+	 * Whether there are more attachments that haven't been sync'd from the server
+	 * that match the collection's query.
+	 *
+	 * @returns {boolean}
+	 */
+	hasMore: function() {
+		return this._hasMore;
+	},
+	/**
+	 * Fetch more attachments from the server for the collection.
+	 *
+	 * @param   {object}  [options={}]
+	 * @returns {Promise}
+	 */
+	more: function( options ) {
+		var query = this;
+
+		// If there is already a request pending, return early with the Deferred object.
+		if ( this._more &amp;&amp; 'pending' === this._more.state() ) {
+			return this._more;
+		}
+
+		if ( ! this.hasMore() ) {
+			return jQuery.Deferred().resolveWith( this ).promise();
+		}
+
+		options = options || {};
+		options.remove = false;
+
+		return this._more = this.fetch( options ).done( function( resp ) {
+			if ( _.isEmpty( resp ) || -1 === this.args.posts_per_page || resp.length &lt; this.args.posts_per_page ) {
+				query._hasMore = false;
+			}
+		});
+	},
+	/**
+	 * Overrides Backbone.Collection.sync
+	 * Overrides wp.media.model.Attachments.sync
+	 *
+	 * @param {String} method
+	 * @param {Backbone.Model} model
+	 * @param {Object} [options={}]
+	 * @returns {Promise}
+	 */
+	sync: function( method, model, options ) {
+		var args, fallback;
+
+		// Overload the read method so Attachment.fetch() functions correctly.
+		if ( 'read' === method ) {
+			options = options || {};
+			options.context = this;
+			options.data = _.extend( options.data || {}, {
+				action:  'query-attachments',
+				post_id: wp.media.model.settings.post.id
+			});
+
+			// Clone the args so manipulation is non-destructive.
+			args = _.clone( this.args );
+
+			// Determine which page to query.
+			if ( -1 !== args.posts_per_page ) {
+				args.paged = Math.round( this.length / args.posts_per_page ) + 1;
+			}
+
+			options.data.query = args;
+			return wp.media.ajax( options );
+
+		// Otherwise, fall back to Backbone.sync()
+		} else {
+			/**
+			 * Call wp.media.model.Attachments.sync or Backbone.sync
+			 */
+			fallback = Attachments.prototype.sync ? Attachments.prototype : Backbone;
+			return fallback.sync.apply( this, arguments );
+		}
+	}
+}, /** @lends wp.media.model.Query */{
+	/**
+	 * @readonly
+	 */
+	defaultProps: {
+		orderby: 'date',
+		order:   'DESC'
+	},
+	/**
+	 * @readonly
+	 */
+	defaultArgs: {
+		posts_per_page: 40
+	},
+	/**
+	 * @readonly
+	 */
+	orderby: {
+		allowed:  [ 'name', 'author', 'date', 'title', 'modified', 'uploadedTo', 'id', 'post__in', 'menuOrder' ],
+		/**
+		 * A map of JavaScript orderby values to their WP_Query equivalents.
+		 * @type {Object}
+		 */
+		valuemap: {
+			'id':         'ID',
+			'uploadedTo': 'parent',
+			'menuOrder':  'menu_order ID'
+		}
+	},
+	/**
+	 * A map of JavaScript query properties to their WP_Query equivalents.
+	 *
+	 * @readonly
+	 */
+	propmap: {
+		'search':    's',
+		'type':      'post_mime_type',
+		'perPage':   'posts_per_page',
+		'menuOrder': 'menu_order',
+		'uploadedTo': 'post_parent',
+		'status':     'post_status',
+		'include':    'post__in',
+		'exclude':    'post__not_in'
+	},
+	/**
+	 * Creates and returns an Attachments Query collection given the properties.
+	 *
+	 * Caches query objects and reuses where possible.
+	 *
+	 * @static
+	 * @method
+	 *
+	 * @param {object} [props]
+	 * @param {Object} [props.cache=true]   Whether to use the query cache or not.
+	 * @param {Object} [props.order]
+	 * @param {Object} [props.orderby]
+	 * @param {Object} [props.include]
+	 * @param {Object} [props.exclude]
+	 * @param {Object} [props.s]
+	 * @param {Object} [props.post_mime_type]
+	 * @param {Object} [props.posts_per_page]
+	 * @param {Object} [props.menu_order]
+	 * @param {Object} [props.post_parent]
+	 * @param {Object} [props.post_status]
+	 * @param {Object} [options]
+	 *
+	 * @returns {wp.media.model.Query} A new Attachments Query collection.
+	 */
+	get: (function(){
+		/**
+		 * @static
+		 * @type Array
+		 */
+		var queries = [];
+
+		/**
+		 * @returns {Query}
+		 */
+		return function( props, options ) {
+			var args     = {},
+				orderby  = Query.orderby,
+				defaults = Query.defaultProps,
+				query,
+				cache    = !! props.cache || _.isUndefined( props.cache );
+
+			// Remove the `query` property. This isn't linked to a query,
+			// this *is* the query.
+			delete props.query;
+			delete props.cache;
+
+			// Fill default args.
+			_.defaults( props, defaults );
+
+			// Normalize the order.
+			props.order = props.order.toUpperCase();
+			if ( 'DESC' !== props.order &amp;&amp; 'ASC' !== props.order ) {
+				props.order = defaults.order.toUpperCase();
+			}
+
+			// Ensure we have a valid orderby value.
+			if ( ! _.contains( orderby.allowed, props.orderby ) ) {
+				props.orderby = defaults.orderby;
+			}
+
+			_.each( [ 'include', 'exclude' ], function( prop ) {
+				if ( props[ prop ] &amp;&amp; ! _.isArray( props[ prop ] ) ) {
+					props[ prop ] = [ props[ prop ] ];
+				}
+			} );
+
+			// Generate the query `args` object.
+			// Correct any differing property names.
+			_.each( props, function( value, prop ) {
+				if ( _.isNull( value ) ) {
+					return;
+				}
+
+				args[ Query.propmap[ prop ] || prop ] = value;
+			});
+
+			// Fill any other default query args.
+			_.defaults( args, Query.defaultArgs );
+
+			// `props.orderby` does not always map directly to `args.orderby`.
+			// Substitute exceptions specified in orderby.keymap.
+			args.orderby = orderby.valuemap[ props.orderby ] || props.orderby;
+
+			// Search the query cache for a matching query.
+			if ( cache ) {
+				query = _.find( queries, function( query ) {
+					return _.isEqual( query.args, args );
+				});
+			} else {
+				queries = [];
+			}
+
+			// Otherwise, create a new query and add it to the cache.
+			if ( ! query ) {
+				query = new Query( [], _.extend( options || {}, {
+					props: props,
+					args:  args
+				} ) );
+				queries.push( query );
+			}
+
+			return query;
+		};
+	}())
+});
+
+module.exports = Query;
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.4</a>
+	
+		on 2017-08-21T10:24:33+02:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
